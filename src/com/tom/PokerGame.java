@@ -5,11 +5,21 @@ import java.util.Random;
 public class PokerGame {
 
 	public static void main(String[] args) {
-		int[] flowers = {9827 , 9830 , 9829 , 9824};
-		int[] pokers = { 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10 , 11 , 12 , 13};
-		for (int i=0; i<pokers.length; i++){
-			System.out.print(pokers);
-		}
+		Poker poker = new Poker();
+		poker.shuffle();
+		poker.print();
+		
+		int[] n = new int[50];
+		Card[] c = new Card[60];
+		System.out.println(n[49]);
+		c[0] = new Card(42);
+		System.out.println(c[0].get());
+		
+//		int[] flowers = {0x2660 , 0x2665 , 0x2666 , 0x2663};
+//		int[] pokers = { 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10 , 11 , 12 , 13};
+//		for (int i=0; i<pokers.length; i++){
+//			System.out.print(pokers);
+//		}
 //		int[] nums = new int[5];
 //		nums[0] = 5;
 //		nums[3] = 9;
