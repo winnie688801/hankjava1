@@ -8,11 +8,13 @@ public class PokerGame {
 		Poker poker = new Poker();
 		poker.shuffle();
 		poker.print();
+		poker.add();
 		
 		int[] n = new int[50];
 		Card[] c = new Card[60];
 		System.out.println(n[49]);
 		c[0] = new Card(42);
+		//在陣列的位子放數字
 		System.out.println(c[0].get());
 		
 //		int[] flowers = {0x2660 , 0x2665 , 0x2666 , 0x2663};
